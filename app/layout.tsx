@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "GitCraft — Build Your GitHub Profile README",
-  description: "Generate a production-grade GitHub profile README live, with a signature GitHub Since badge — zero signup.",
+  title: "GitCraft",
+  description: "Generate a GitHub profile README live.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
