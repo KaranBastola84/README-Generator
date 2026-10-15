@@ -1,10 +1,10 @@
-import { Terminal, ExternalLink, CheckCircle, Shield, Download, Check } from "lucide-react";
+import { Terminal, CheckCircle, Shield, Download } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative w-full px-margin md:px-margin-desktop pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden border-b border-outline-variant/50">
       {/* Ambient light glows behind hero */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[480px] bg-gradient-to-tr from-sky-200/40 via-primary-fixed/30 to-transparent rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-180 h-120 bg-linear-to-tr from-sky-200/40 via-primary-fixed/30 to-transparent rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
          {/* Straw Hat captain silhouette — left accent (xl+) */}
       <div className="absolute -left-12 top-1/4 w-64 h-64 pointer-events-none hidden xl:block opacity-45 animate-float">
         <svg
@@ -144,13 +144,13 @@ export default function Hero() {
             ──┘
           </span>
 
-          <h1 className="font-display text-display text-on-surface tracking-tight max-w-4xl font-extrabold sm:text-[54px] sm:leading-[62px]">
+          <h1 className="font-display text-display text-on-surface tracking-tight max-w-4xl font-extrabold sm:text-[54px] sm:leading-15.5">
             Build Your GitHub Profile README.
             <br className="hidden sm:inline" />
             <span className="relative inline-block text-primary">
               Live as You Type.
               {/* Underline geometric hatch */}
-              <span className="absolute left-0 -bottom-1 w-full h-1 bg-gradient-to-r from-primary via-primary-container to-tertiary rounded-full opacity-80" />
+              <span className="absolute left-0 -bottom-1 w-full h-1 bg-linear-to-r from-primary via-primary-container to-tertiary rounded-full opacity-80" />
             </span>
           </h1>
         </div>
