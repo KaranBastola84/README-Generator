@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Terminal, CheckCircle, Shield, Download } from "lucide-react";
 
 export default function Hero() {
@@ -164,9 +165,9 @@ export default function Hero() {
 
         {/* High-contrast CTAs */}
         <div className="mt-space-xl flex flex-wrap items-center justify-center gap-space-md">
-          <a
+          <Link
             className="relative group inline-flex items-center gap-space-xs px-space-xl py-3.5 bg-on-surface hover:bg-primary text-surface-container-lowest font-body-md text-body-md rounded shadow-sm hover:shadow-md transition-all duration-150"
-            href="#workbench"
+            href="/builder"
           >
             <span className="absolute -top-1 -left-1 text-[9px] text-primary-fixed font-code leading-none group-hover:scale-125 transition-transform">
               ┌
@@ -176,7 +177,7 @@ export default function Hero() {
             </span>
             <span className="font-medium">Start Crafting</span>
             <Terminal size={18} />
-          </a>
+          </Link>
 
          
         </div>
